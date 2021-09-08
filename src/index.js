@@ -11,9 +11,8 @@ ReactDOM.render(
 	<React.StrictMode>
 		<Nav/>
 		<Router>
-			<Route path="/" exact component={App}/>
-			<Route path="/home" exact component={App}/>
-			<Route path="/about" component={About}/>
+			<Route path={["/", "/home", "/TodoList-React/build", "/TodoList-React/build/home"]} exact component={App}/>
+			<Route path={["/about", "/TodoList-React/build/about"]} component={About}/>
 		</Router>
 	</React.StrictMode>,
 	document.getElementById('root')
